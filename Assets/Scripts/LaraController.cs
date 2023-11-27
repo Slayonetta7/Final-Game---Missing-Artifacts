@@ -37,7 +37,7 @@ public class LaraController : MonoBehaviour
         } //move Code ends
 
         //jump code starts
-        if(Input.GetButtonDown("Jump") && groundcheck.GetComponent<Exercise2GroundCheck>().AmIOnTheGround == true) //checks is player is on ground or not
+        if(Input.GetButtonDown("Jump") && groundcheck.GetComponent<LaraGroundcheck>().AmIOnTheGround == true) //checks if player is on ground or not
         {
             myRigidbody.AddForce(x:0, y:jumpForce, z:0);
         } //jump code ends
@@ -51,8 +51,8 @@ public class LaraController : MonoBehaviour
         } //rotation code ends
 
         //animation code begins
-        playerAnimator.SetFloat(name:"speed", moveDirection.magnitude);
+        playerAnimator.SetFloat(name:"Speed", moveDirection.magnitude);
         playerAnimator.SetFloat(name:"verticalSpeed", myRigidbody.velocity.y);
-        playerAnimator.SetBool(name:"AmIGrounded", groundcheck.GetComponent<Exercise2GroundCheck>().AmIOnTheGround);
+        playerAnimator.SetBool(name:"AmIGrounded", groundcheck.GetComponent<LaraGroundcheck>().AmIOnTheGround);
     }
 }
