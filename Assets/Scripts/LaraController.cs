@@ -8,6 +8,7 @@ public class LaraController : MonoBehaviour
     public float moveForce;
     public float maxSpeed;
     public float jumpForce;
+    public float thrust;
     private Rigidbody myRigidbody; //renames the rigidbody 
 
     public GameObject groundcheck;
