@@ -13,7 +13,7 @@ public class GameManagerScript : MonoBehaviour
 
     public int score;
     public int specialPickup;
-    public int numberofSpecialForInvincibility;
+    public int numberOfSpecialForInvincibility;
 
     public GameObject[] specialPickups;
 
@@ -28,13 +28,12 @@ public class GameManagerScript : MonoBehaviour
     {
         scoreText.text = "score is " + score;
 
-
         if(Input.GetKeyDown(name:"escape"))
         {
             pauseMenu.SetActive(true);
         }
 
-        if (specialPickup == numberofSpecialForInvincibility)
+        if (specialPickup == numberOfSpecialForInvincibility)
         {
             yay.gameObject.SetActive(true);
             yay.text = "yay";
@@ -49,7 +48,7 @@ public class GameManagerScript : MonoBehaviour
 
     public void AddSpecialPickup()
     {
-        if (specialPickup<numberofSpecialForInvincibility)
+        if (specialPickup<numberOfSpecialForInvincibility)
         {
             specialPickup = specialPickup + 1; 
         }

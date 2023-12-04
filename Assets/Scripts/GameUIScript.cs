@@ -20,4 +20,9 @@ public class GameUIScript : MonoBehaviour
     {
         Time.timeScale = 0;
     }
+
+    public void Play()
+    {
+        Time.timeScale = 1;
+    }
 }
