@@ -9,11 +9,13 @@ public class GameManagerScript : MonoBehaviour
     public GameObject pauseMenu;
 
     public TMP_Text scoreText;
-    public TMP_Text yay;
+    public TMP_Text artifactText;
+    public TMP_Text win;
 
     public int score;
+    public int artifact;
     public int specialPickup;
-    public int numberOfSpecialForInvincibility;
+    public int numberOfSpecialForWin;
 
     public GameObject[] specialPickups;
 
@@ -26,17 +28,18 @@ public class GameManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = "score is " + score;
+        scoreText.text = "Gems: " + score;
+        artifactText.text = "Artifacts:" + artifact;
 
         if(Input.GetKeyDown(name:"escape"))
         {
             pauseMenu.SetActive(true);
         }
 
-        if (specialPickup == numberOfSpecialForInvincibility)
+        if (specialPickup == numberOfSpecialForWin)
         {
-            yay.gameObject.SetActive(true);
-            yay.text = "yay";
+            win.gameObject.SetActive(true);
+            win.text = "Congratulations, you have recovered all missing Artifacts!";
             specialPickup = 0;
         }
     }
@@ -48,9 +51,10 @@ public class GameManagerScript : MonoBehaviour
 
     public void AddSpecialPickup()
     {
-        if (specialPickup<numberOfSpecialForInvincibility)
+        if (specialPickup<numberOfSpecialForWin)
         {
             specialPickup = specialPickup + 1; 
+            artifact = artifact + 1;
         }
         
     }
