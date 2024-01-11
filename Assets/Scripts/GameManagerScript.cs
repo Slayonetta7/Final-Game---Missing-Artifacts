@@ -8,9 +8,15 @@ public class GameManagerScript : MonoBehaviour
 {
     public GameObject pauseMenu;
 
+    public GameObject player;
+
     public TMP_Text scoreText;
     public TMP_Text artifactText;
     public TMP_Text win;
+
+    public TMP_Text healthText;
+    public int health;
+    public TMP_Text failText;
 
     public int score;
     public int artifact;
@@ -29,7 +35,8 @@ public class GameManagerScript : MonoBehaviour
     void Update()
     {
         scoreText.text = "Gems: " + score;
-        artifactText.text = "Artifacts:" + artifact;
+        artifactText.text = "Artifacts: " + artifact;
+        healthText.text = "Health: " + health;
 
         if(Input.GetKeyDown(name:"escape"))
         {
@@ -58,4 +65,16 @@ public class GameManagerScript : MonoBehaviour
         }
         
     }
+
+    public void DecreaseHealth()
+    {
+        health = health - 1;
+
+        if (health <= 0)
+        {
+            Destroy(player);
+            failText.gameObject.SetActive(true);
+            failText.text = "You failed to retrieve the Artifacts!";
+        } 
+     }
 }

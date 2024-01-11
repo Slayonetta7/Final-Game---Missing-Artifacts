@@ -11,6 +11,8 @@ public class NavMeshEnemy : MonoBehaviour
 
     public GameObject player;
 
+    public GameManagerScript GameManager;
+
     public float detectionRadius;
     public float alertRadius;
     private bool alert;
@@ -30,6 +32,8 @@ public class NavMeshEnemy : MonoBehaviour
         positionNumber = Random.Range(0, patrolPoints.Length);
         agent.SetDestination(patrolPoints[positionNumber].transform.position);
         alert = false;
+
+        GameManager = FindObjectOfType<GameManagerScript>();
     }
 
     // Update is called once per frame
@@ -62,10 +66,14 @@ public class NavMeshEnemy : MonoBehaviour
 
         if (alert == false && agent.remainingDistance<0.1f)
         {
+            positionNumber = Random.Range(0, patrolPoints.Length);
+            agent.SetDestination(patrolPoints[positionNumber].transform.position);
+        }
 
-                positionNumber = Random.Range(0, patrolPoints.Length);
-                agent.SetDestination(patrolPoints[positionNumber].transform.position);
-
+        if (distanceBetweenMeAndPlayer <= 10)
+        {
+            GameManager.DecreaseHealth();
+            Debug.Log("Damaged");
         }
     }
 

@@ -616,6 +616,7 @@ MonoBehaviour:
   agent: {fileID: 825968964}
   playerPosition: {x: 0, y: 0, z: 0}
   player: {fileID: 1996044793}
+  GameManager: {fileID: 0}
   detectionRadius: 6
   alertRadius: 12
   alertTimer: 5
@@ -667,7 +668,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0fa54594774f8d64eab17fdb22b16f08, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -893,6 +894,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AmIOnTheGround: 0
+--- !u!1 &1082606653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1082606654}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1082606654
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082606653}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 29.797318, y: 24.16446, z: -34.164608}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1139364843
 Mesh:
   m_ObjectHideFlags: 0
@@ -5091,15 +5123,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d687e3f84bdeabf4c82fdf5f7b585a3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveForce: 20
-  maxSpeed: 15
+  moveForce: 50
+  maxSpeed: 70
   jumpForce: 100
   groundcheck: {fileID: 917436855}
   child: {fileID: 1173245874}
   rotateSpeed: 10
   rotationSensitivity: 1
   playerAnimator: {fileID: 1279479087}
-  myParticle: {fileID: 0}
+  myParticle: {fileID: 1082606653}
 --- !u!1001 &6370137380630234416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5172,3 +5204,4 @@ SceneRoots:
   - {fileID: 280623340}
   - {fileID: 815342356}
   - {fileID: 1501390270}
+  - {fileID: 1082606654}

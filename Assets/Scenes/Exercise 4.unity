@@ -439,7 +439,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 197733982}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.21900566, y: -0.000000018770303, z: 0.0000000042130806, w: 0.9757236}
+  m_LocalRotation: {x: 0.21900566, y: 0.000000018770303, z: -0.0000000042130806, w: 0.9757236}
   m_LocalPosition: {x: 0, y: 8.84725, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -915,21 +915,25 @@ PrefabInstance:
       propertyPath: m_TagString
       value: SpecialPickup
       objectReference: {fileID: 0}
+    - target: {fileID: 4292908675163845733, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7109958506407608857, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7217389081131389347, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.38
+      value: 13.7
       objectReference: {fileID: 0}
     - target: {fileID: 7217389081131389347, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.6
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 7217389081131389347, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 43.26
+      value: -1.6
       objectReference: {fileID: 0}
     - target: {fileID: 7217389081131389347, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -965,14 +969,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3286727280336036458, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 663362807}
+      addedObject: {fileID: 663362814}
   m_SourcePrefab: {fileID: 100100000, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
 --- !u!1 &663362806 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3286727280336036458, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
   m_PrefabInstance: {fileID: 663362805}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &663362807
+--- !u!114 &663362814
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -981,10 +985,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 663362806}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e946017c19dcc214ba2d24148fa75e91, type: 3}
+  m_Script: {fileID: 11500000, guid: 3cc945779da3b8e4c9718d9581b1fda7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameManager: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!1001 &678114298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -996,6 +1000,10 @@ PrefabInstance:
     - target: {fileID: 3286727280336036458, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
       propertyPath: m_Name
       value: PickUp (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292908675163845733, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7217389081131389347, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1062,6 +1070,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: SpecialPickup
       objectReference: {fileID: 0}
+    - target: {fileID: 4292908675163845733, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7109958506407608857, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -1112,14 +1124,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3286727280336036458, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 721896484}
+      addedObject: {fileID: 721896491}
   m_SourcePrefab: {fileID: 100100000, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
 --- !u!1 &721896483 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3286727280336036458, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
   m_PrefabInstance: {fileID: 721896482}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &721896484
+--- !u!114 &721896491
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1128,10 +1140,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 721896483}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e946017c19dcc214ba2d24148fa75e91, type: 3}
+  m_Script: {fileID: 11500000, guid: 3cc945779da3b8e4c9718d9581b1fda7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameManager: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!1 &811391119
 GameObject:
   m_ObjectHideFlags: 0
@@ -1316,6 +1328,7 @@ MonoBehaviour:
   agent: {fileID: 825968964}
   playerPosition: {x: 0, y: 0, z: 0}
   player: {fileID: 1996044793}
+  GameManager: {fileID: 0}
   detectionRadius: 6
   alertRadius: 12
   alertTimer: 5
@@ -1522,7 +1535,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 869164393}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.21900566, y: -0.000000018770303, z: 0.0000000042130806, w: 0.9757236}
+  m_LocalRotation: {x: 0.21900566, y: 0.000000018770303, z: -0.0000000042130806, w: 0.9757236}
   m_LocalPosition: {x: 0, y: 8.84725, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7622,6 +7635,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: SpecialPickup
       objectReference: {fileID: 0}
+    - target: {fileID: 4292908675163845733, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7109958506407608857, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -7672,14 +7689,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3286727280336036458, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1503348420}
+      addedObject: {fileID: 1503348427}
   m_SourcePrefab: {fileID: 100100000, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
 --- !u!1 &1503348419 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3286727280336036458, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
   m_PrefabInstance: {fileID: 1503348418}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1503348420
+--- !u!114 &1503348427
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7688,10 +7705,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1503348419}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e946017c19dcc214ba2d24148fa75e91, type: 3}
+  m_Script: {fileID: 11500000, guid: 3cc945779da3b8e4c9718d9581b1fda7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameManager: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!1 &1528794595
 GameObject:
   m_ObjectHideFlags: 0
@@ -7722,11 +7739,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1389557172}
+  player: {fileID: 1996044793}
   scoreText: {fileID: 1852159992}
-  yay: {fileID: 1307076130}
+  artifactText: {fileID: 0}
+  win: {fileID: 1307076130}
+  healthText: {fileID: 0}
+  health: 0
+  failText: {fileID: 0}
   score: 0
+  artifact: 0
   specialPickup: 0
-  numberOfSpecialForInvincibility: 3
+  numberOfSpecialForWin: 3
   specialPickups:
   - {fileID: 721896483}
   - {fileID: 663362806}
@@ -7863,6 +7886,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PickUp (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4292908675163845733, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7217389081131389347, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -40.821846
@@ -7919,6 +7946,10 @@ PrefabInstance:
     - target: {fileID: 3286727280336036458, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
       propertyPath: m_Name
       value: PickUp (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292908675163845733, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7217389081131389347, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11851,13 +11882,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: PickUp
       objectReference: {fileID: 0}
+    - target: {fileID: 4292908675163845733, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7217389081131389347, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -30.48
       objectReference: {fileID: 0}
     - target: {fileID: 7217389081131389347, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.83
+      value: 1.06
       objectReference: {fileID: 0}
     - target: {fileID: 7217389081131389347, guid: 1d857eb89b2641c4c90832289f2f7dcd, type: 3}
       propertyPath: m_LocalPosition.z

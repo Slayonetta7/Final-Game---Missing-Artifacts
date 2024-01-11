@@ -4,26 +4,25 @@ using UnityEngine;
 
 public class SpecialPickupScript : MonoBehaviour
 {
-     public GameManagerScript GameManager;
+    public GameManagerScript gameManager;
     // Start is called before the first frame update
     void Start()
     {
-        GameManager = FindObjectOfType<GameManagerScript>();
+        gameManager = FindObjectOfType<GameManagerScript>();
     }
-
 
     // Update is called once per frame
     void Update()
     {
         
     }
-
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
-            GameManager.AddSpecialPickup();
+            gameManager.AddSpecialPickup();
             Destroy(gameObject);
         }
+
     }
 }
