@@ -57,12 +57,20 @@ I also added sound files that are played when an item is picked up as well as ba
 I created a Win pop-up after collecting all three artifacts hidden throughout the maze and a Fail screen that pops up when Lara's health reaches zero at which point her model gets "destroyed".
 A brief introduction text in the spawn area gives players context for the game as well as the goal to retrieve the three hidden artifacts.
 
-The playthrough on YouTube is very laggy as my Laptop were close to breaking down running the game and recording it at the same time.
-The frame rate suffered and created a lot of lag and made it difficult to control Lara precisely. 
+The recording of the YouTube playthrough was very laggy as my Laptop was close to breaking down running the game and recording it at the same time.
+The frame rate suffered which made it difficult to control Lara precisely and thus leads to some weird looking scenes in the recording.
 I hope you'll be able to run the game on your machine to experience it in a fluid way!
 
-The game can be played in the scene "Missing Artifacts FINAL", previous scenes with the name "Missing" are back-ups from the development process.
+The game can be played in the scene "Final Game", previous scenes with the name "Missing" are back-ups from the development process.
 
 Weekly Exercises: 
 
 I have four Weekly Exercise scenes, each relating to one of the YouTube tutorials from the playlist and featuring the things we covered in each tutorial. 
+
+YouTube Links: 
+
+https://www.youtube.com/watch?v=u1eLL3Vvmx0 (Weekly Exercises)
+https://www.youtube.com/watch?v=UmMwSJJN6SQ (Final Game Playthrough)
+
+Github Link: 
+https://github.com/Slayonetta7/Final-Game---Missing-Artifacts
